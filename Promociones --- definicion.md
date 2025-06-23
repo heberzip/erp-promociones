@@ -62,21 +62,21 @@ erDiagram
     date fecha_inicio
     date fecha_fin
     boolean sin_limite
-    float importe (si específica)
+    float importe
     boolean activa
   }
 
   CODIGO {
     string id
     string codigo
-    float monto (si genérica)
+    float monto 
     date fecha_creacion
     date fecha_validez
     date? fecha_uso
     string? cliente
     string? reserva
     float? total_pagado
-    boolean activo (solo multi-uso)
+    boolean activo
   }
 
   RAZON {
