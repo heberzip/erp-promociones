@@ -23,10 +23,10 @@ CODIGO (dentro de PROMOCIONES) {
     float monto (si genérica)
     date fecha_creacion
     date fecha_validez
-    date ? fecha_uso
-    string ? cliente
-    string ? reserva
-    float ? total_pagado
+    date fecha_uso
+    string cliente
+    string reserva
+    float total_pagado
     boolean activo (solo multi-uso)
   }
 ```
