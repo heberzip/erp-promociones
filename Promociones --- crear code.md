@@ -1,8 +1,8 @@
 ### CREACIÓN CÓDIGO FLOW
 ```mermaid
 flowchart TD
-	inicio["Inicio desde VISTA DE PROMOCIÓN \n||\n Tabla de PROMOCIONES"]
-	inicio --> tipoPromo{"Promoción es: \nGENERICA || ESPECIFICA?"}
+	inicio["Inicio desde VISTA DE PROMOCIÓN || Tabla de PROMOCIONES"]
+	inicio --> tipoPromo{"Promoción es: GENERICA || ESPECIFICA?"}
 	tipoPromo --> |GENERICA| genPath[Solicitar monto promo]
 	tipoPromo --> |ESPECIFICA| espPath[Usar importe de la promo]
 
@@ -18,9 +18,9 @@ flowchart TD
 	pedirFechas --> frecuenciaCheck
 	usarFechasPromo --> frecuenciaCheck
 
-	frecuenciaCheck{"Promoción definida como:\nUSO UNICO || MULTI-USO?"}
+	frecuenciaCheck{"Promoción definida como: USO UNICO || MULTI-USO?"}
 	frecuenciaCheck --> |MULTI-USO| aoCheck
-	frecuenciaCheck --> |USO UNICO| numCodes["Se introduce la cantidad\nde códigos a generar\n(por defecto es 1)"]
+	frecuenciaCheck --> |USO UNICO| numCodes["Se introduce la cantidad de códigos a generar (por defecto es 1)"]
 
 	numCodes --> aoCheck
 
