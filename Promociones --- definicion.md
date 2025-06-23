@@ -56,9 +56,9 @@ erDiagram
     string id
     string nombre
     string descripcion
-    enum TIPO_PROMO //("genérica" o "específica")
-    enum TIPO_FRECUENCIA //("uso único" o "multi-uso")
-    string tipo_aplicacion_fecha
+    enum TIPO_PROMO 
+    enum TIPO_FRECUENCIA
+    enum TIPO_APLICACION_FECHA
     date fecha_inicio
     date fecha_fin
     boolean sin_limite
