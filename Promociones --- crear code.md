@@ -1,4 +1,5 @@
-### CREACIÓN CÓDIGO FLOW
+CREACIÓN CÓDIGO FLOW
+---
 ```mermaid
 flowchart TD
 	inicio["Inicio desde VISTA DE PROMOCIÓN || Tabla de PROMOCIONES"]
