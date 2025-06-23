@@ -12,27 +12,27 @@ erDiagram
     string id
     string nombre
     string descripcion
-    enum TIPO_PROMO 
-    enum TIPO_FRECUENCIA
-    enum TIPO_APLICACION_FECHA
+    enum TIPO_PROMO "genérica o específica"
+    enum TIPO_FRECUENCIA "uso único o multi-uso"
+    enum TIPO_APLICACION_FECHA "fecha-compra o fecha-traslado"
     date fecha_inicio
     date fecha_fin
     boolean sin_limite
-    float importe
+    float importe "si es específica"
     boolean activa
   }
 
   CODIGO {
     string id
     string codigo
-    float monto 
+    float monto "si es genérica"
     date fecha_creacion
     date fecha_validez
-    date fecha_uso
-    string cliente
-    string reserva
-    float total_pagado
-    boolean activo
+    date fecha_uso_opt
+    string cliente_opt
+    string reserva_opt
+    float total_pagado_opt
+    boolean activo "solo multi-uso"
   }
 
   RAZON {
